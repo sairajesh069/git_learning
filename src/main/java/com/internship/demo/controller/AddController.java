@@ -14,5 +14,11 @@ public class AddController {
     public Integer add(@RequestParam int num1, @RequestParam int num2) {
         return num1 + num2;
     }
+
+    @GetMapping("/sub")
+    public Integer sub(@RequestParam int num1, @RequestParam int num2) {
+        return num1-num2;
+    }
+    
     
 }
